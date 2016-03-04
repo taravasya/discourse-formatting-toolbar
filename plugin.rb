@@ -4,4 +4,4 @@
 # authors: Steven, iunctis.fr - Thanks to ZogStrip and cpradio
 # url: https://github.com/iunctis/discourse-formatting-toolbar.git
 
-enabled_site_setting :formatting_ui_enabled
+enabled_site_setting :formattingtlb_ui_enabled
