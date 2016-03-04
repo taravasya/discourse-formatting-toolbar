@@ -8,4 +8,5 @@ Add formatting options on your post :
 ## Thanks
 
 [ZogStrip](https://github.com/discourse/vbulletin-bbcode) : for his vbulletin BBcode, which was very helpful.
+
 [cpradio](https://github.com/cpradio) : for the toolbar.
