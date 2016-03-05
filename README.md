@@ -31,12 +31,7 @@ margin-left:15px;
 
 ## Thanks
 
+Basically, I didn't create much, I just adapted some functions from the plugins of these two person :
+
  - [ZogStrip](https://github.com/discourse/vbulletin-bbcode) : for his vbulletin BBcode, which was very helpful.
- - [cpradio](https://github.com/cpradio) : for the toolbar.
-
-
-<br>
-
-## Formatting toolbar
-
-Steven - [iunctis.fr](http://iunctis.fr)
+ - [cpradio](https://github.com/cpradio) : for the help on the toolbar.
