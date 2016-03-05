@@ -17,7 +17,8 @@ Add formatting options on your post :
 float:left;<br>
 margin-right:15px;<br>
 }
-<br>
+
+
 .floatr {<br>
 float:right;<br>
 margin-left:15px;<br>
