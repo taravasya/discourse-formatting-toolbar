@@ -5,4 +5,5 @@
 # url: https://github.com/iunctis/discourse-formatting-toolbar.git
 
 register_asset "javascripts/formatting_bbcode.js", :server_side
+register_asset 'stylesheets/formatting.scss'
 enabled_site_setting :formattingtlb_ui_enabled
