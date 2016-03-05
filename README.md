@@ -9,20 +9,22 @@ Add formatting options on your post :
 
 ## Tips
 
-- The [floatr][/floatr] bbcode has been created but I didn't add a button, it doesn't feel necessary.
+The `[floatr][/floatr]` bbcode has been created but I didn't add a button, it doesn't feel necessary.
 
-- If you want to change the margin in the float left, you can go to the Customize section in your admin panels, create a new css page and add this and change the value in the margin part : 
+<br>
 
-.floatl {<br>
+If you want to change the margin in the float left, you can go to the Customize section in your admin panels, create a new css page and add this and change the value in the margin part : 
+
+`.floatl {<br>
 float:left;<br>
 margin-right:15px;<br>
-}
+}`
 
 
-.floatr {<br>
+`.floatr {<br>
 float:right;<br>
 margin-left:15px;<br>
-}
+}`
 
 
 <br>
