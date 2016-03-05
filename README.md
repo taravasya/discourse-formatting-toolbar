@@ -2,11 +2,7 @@
 
 Add formatting options on your post : 
 
-<div align="center">
-
 ![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting.png)
-
-</div>
 
 
 <br>
