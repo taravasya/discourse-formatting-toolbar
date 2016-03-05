@@ -9,6 +9,8 @@ Add formatting options on your post :
 
 ## Tips
 
+[**How to install a plugin**](https://meta.discourse.org/t/install-a-plugin/19157) : a guide by @techAPJ
+
 The `[floatr][/floatr]` bbcode has been created but I didn't add a button, it doesn't feel necessary.
 
 If you want to change the margin in the float left, you can go to the Customize section in your admin panels, create a new css page and add this and change the value in the margin part : 
