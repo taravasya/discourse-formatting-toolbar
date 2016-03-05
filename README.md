@@ -2,10 +2,10 @@
 
 Add formatting options on your post : 
 
-![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting.png )
+&nbsp; &nbsp; &nbsp; &nbsp; ![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting.png )
 
 
-
+<br>
 
 ## Thanks
 
@@ -13,7 +13,7 @@ Add formatting options on your post :
  - [cpradio](https://github.com/cpradio) : for the toolbar.
 
 
-
+<br>
 
 ## Formatting toolbar
 
