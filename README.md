@@ -13,15 +13,15 @@ Add formatting options on your post :
 
 - If you want to change the margin in the float left, you can go to the Customize section in your admin panels, create a new css page and add this and change the value in the margin part : 
 
-    .floatl {
-    float:left;
-    margin-right:15px;
-    }
-
-    .floatr {
-    float:right;
-    margin-left:15px;
-    }
+.floatl {<br>
+float:left;<br>
+margin-right:15px;<br>
+}
+<br>
+.floatr {<br>
+float:right;<br>
+margin-left:15px;<br>
+}
 
 
 <br>
