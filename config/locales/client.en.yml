@@ -2,7 +2,7 @@ en:
   js:
     composer:
       addimg_ui_button_title: "Add an image"
-      addimg_ui_default_text: "Text"
+      addimg_ui_default_text: "Link"
       floatl_ui_button_title: "Add content in the left"
       floatl_ui_default_text: "Image"
       center_ui_button_title: "Center content"
