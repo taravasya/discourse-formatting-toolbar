@@ -2,12 +2,12 @@ fr:
   js:
     composer:
       addimg_ui_button_title: "Ajouter une image"
-      addimg_ui_default_text: ""
+      addimg_ui_default_text: "Lien"
       floatl_ui_button_title: "Ajouter du contenu à gauche de votre texte"
-      floatl_ui_default_text: ""
+      floatl_ui_default_text: "Image"
       center_ui_button_title: "Centrer une image ou du texte"
-      center_ui_default_text: ""
+      center_ui_default_text: "Texte"
       right_ui_button_title: "Aligner votre texte à droite"
-      right_ui_default_text: ""
+      right_ui_default_text: "Texte"
       justify_ui_button_title: "Justifier votre texte"
-      justify_ui_default_text: ""
+      justify_ui_default_text: "Texte"
