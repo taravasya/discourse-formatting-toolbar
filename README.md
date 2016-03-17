@@ -1,6 +1,6 @@
 ## discourse-formatting-toolbar
 
-Add formatting options on your post : 
+Add text formatting options on your post : 
 
 ![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting.png)
 
@@ -32,8 +32,6 @@ margin-left:15px;
 <br>
 
 ## Thanks
-
-Basically, I didn't create much, I just adapted some functions from the plugins of these two person :
 
  - [ZogStrip](https://github.com/discourse/vbulletin-bbcode) : for his vbulletin BBcode, which was very helpful.
  - [cpradio](https://github.com/cpradio) : for the help on the toolbar.
