@@ -2,10 +2,12 @@
 
 Add text formatting options on your post
 
+<br>
+
 ![](https://raw.githubusercontent.com/iunctis/discourse-formatting-toolbar/master/formatting-tlb.jpg)
 <br>Here is the toolbar in the composer
 
-<br><br>
+<br>
 
 ![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting.png)
 <br>and the result in your post when you use the plugin
