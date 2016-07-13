@@ -18,7 +18,7 @@ export function setup(helper) {
     }
   });
 
-  const { register, replaceBBCode, rawBBCode, replaceBBCodeParamsRaw } = builders(helper);
+  const { register, replaceBBCode } = builders(helper);
 
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
