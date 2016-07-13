@@ -1,10 +1,13 @@
 ## discourse-formatting-toolbar
 
-Add text formatting options on your post : 
-
-![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting.png)
+Add text formatting options on your post
 
 ![](https://raw.githubusercontent.com/iunctis/discourse-formatting-toolbar/master/formatting-tlb.jpg)
+here is the toolbar in the compose
+
+![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting.png)
+and the result in your post when you use the plugin
+
 
 
 <br>
