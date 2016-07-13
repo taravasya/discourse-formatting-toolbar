@@ -4,7 +4,7 @@ Add text formatting options on your post :
 
 ![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting.png)
 
-![](https://raw.githubusercontent.com/iunctis/discourse-formatting-toolbar/master/toolbar.png)
+![](https://raw.githubusercontent.com/iunctis/discourse-formatting-toolbar/master/formatting-tlb.jpg)
 
 
 <br>
