@@ -34,4 +34,5 @@ margin-left:15px;
 ## Thanks
 
  - [ZogStrip](https://github.com/discourse/vbulletin-bbcode) : for his vbulletin BBcode, which was very helpful.
+ - [eviltrout](https://github.com/eviltrout) : for the upgrading of the vbulletin BBcode
  - [cpradio](https://github.com/cpradio) : for the help on the toolbar.
