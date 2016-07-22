@@ -50,6 +50,15 @@ function priorToApi(container)
           perform: e => e.applySurround('[justify]', '[/justify]', 'justify_ui_default_text')
         });
       });
+      
+      onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: "couleur_ui_button",
+          group: "extras",
+          icon: "paint-brush",
+          perform: e => e.applySurround('[color=#]', '[/color]', 'couleur_ui_default_text')
+        });
+      });
   }
 }
 
@@ -100,6 +109,15 @@ function initializePlugin(api)
           group: "extras",
           icon: "align-justify",
           perform: e => e.applySurround('[justify]', '[/justify]', 'justify_ui_default_text')
+        });
+      });
+      
+    api.onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: "couleur_ui_button",
+          group: "extras",
+          icon: "paint-brush",
+          perform: e => e.applySurround('[color=#]', '[/color]', 'couleur_ui_default_text')
         });
       });
   }
