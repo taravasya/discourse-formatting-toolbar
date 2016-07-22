@@ -11,3 +11,5 @@ en:
       right_ui_default_text: "Text"
       justify_ui_button_title: "Justify a text"
       justify_ui_default_text: "Text"
+      couleur_ui_button_title: "Color text"
+      couleur_ui_default_text: "Text"
