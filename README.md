@@ -28,7 +28,7 @@ float:right;
 margin-left:15px;
 }`
 
-- For the color bbcode, you can add a color code in the bbcode : [color=#FF3300]Text[/color] to have a red text. You can find color codes in multiple websites like this one : http://html-color-codes.info/
+- For the color bbcode, you can add a color code in the bbcode : `[color=#FF3300]Text[/color]` to have a red text. You can find color codes in multiple websites like this one : http://html-color-codes.info/
 
 
 <br>
