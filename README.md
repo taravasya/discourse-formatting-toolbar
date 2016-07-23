@@ -4,13 +4,8 @@ Add text formatting options on your post
 
 <br>
 
-![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting-tlb.png)
-<br>Here is the toolbar in the composer
-
-<br>
-
-![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting-example.png)
-<br>and the result in your post when you use the plugin
+![](https://github.com/iunctis/discourse-formatting-toolbar/blob/master/formatting-toolbar.png?raw=true)
+<br>Here is the toolbar in the composer and the result in your post when you use the plugin
 
 
 
