@@ -88,7 +88,7 @@ function initializePlugin(api)
     api.onToolbarCreate(toolbar => {
         toolbar.addButton({
           id: "couleur_ui_button",
-          group: "extras",
+          group: "fontStyles",
           icon: "paint-brush",
           perform: e => e.applySurround('[color=#]', '[/color]', 'couleur_ui_default_text')
         });
