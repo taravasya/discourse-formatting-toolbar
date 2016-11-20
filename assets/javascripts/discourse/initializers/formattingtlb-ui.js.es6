@@ -8,6 +8,24 @@ function priorToApi(container)
   if (siteSettings.formattingtlb_ui_enabled) {
       onToolbarCreate(toolbar => {
         toolbar.addButton({
+          id: "souligner_ui_button",
+          group: "fontStyles",
+          icon: "underline",
+          perform: e => e.applySurround('[u]', '[/u]', 'souligner_ui_default_text')
+        });
+      });
+    
+      onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: "couleur_ui_button",
+          group: "fontStyles",
+          icon: "paint-brush",
+          perform: e => e.applySurround('[color=#]', '[/color]', 'couleur_ui_default_text')
+        });
+      });
+    
+      onToolbarCreate(toolbar => {
+        toolbar.addButton({
           id: "addimg_ui_button",
           group: "extras",
           icon: "picture-o",
@@ -48,15 +66,6 @@ function priorToApi(container)
           group: "extras",
           icon: "align-justify",
           perform: e => e.applySurround('[justify]', '[/justify]', 'justify_ui_default_text')
-        });
-      });
-      
-      onToolbarCreate(toolbar => {
-        toolbar.addButton({
-          id: "couleur_ui_button",
-          group: "extras",
-          icon: "paint-brush",
-          perform: e => e.applySurround('[color=#]', '[/color]', 'couleur_ui_default_text')
         });
       });
   }
@@ -69,6 +78,24 @@ function initializePlugin(api)
   if (siteSettings.formattingtlb_ui_enabled) {
     api.onToolbarCreate(toolbar => {
         toolbar.addButton({
+          id: "souligner_ui_button",
+          group: "fontStyles",
+          icon: "underline",
+          perform: e => e.applySurround('[u]', '[/u]', 'souligner_ui_default_text')
+        });
+      });
+    
+    api.onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: "couleur_ui_button",
+          group: "extras",
+          icon: "paint-brush",
+          perform: e => e.applySurround('[color=#]', '[/color]', 'couleur_ui_default_text')
+        });
+      });
+    
+    api.onToolbarCreate(toolbar => {
+        toolbar.addButton({
           id: "addimg_ui_button",
           group: "extras",
           icon: "picture-o",
@@ -109,15 +136,6 @@ function initializePlugin(api)
           group: "extras",
           icon: "align-justify",
           perform: e => e.applySurround('[justify]', '[/justify]', 'justify_ui_default_text')
-        });
-      });
-      
-    api.onToolbarCreate(toolbar => {
-        toolbar.addButton({
-          id: "couleur_ui_button",
-          group: "extras",
-          icon: "paint-brush",
-          perform: e => e.applySurround('[color=#]', '[/color]', 'couleur_ui_default_text')
         });
       });
   }
