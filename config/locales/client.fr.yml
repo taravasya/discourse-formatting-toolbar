@@ -1,10 +1,10 @@
 fr:
   js:
     composer:
-      underline_ui_button_title: "Souligner du texte"
-      underline_ui_default_text: "Texte"
-      color_ui_button_title: "Colorer un texte"
-      color_ui_default_text: "Texte"
+      souligner_ui_button_title: "Souligner du texte"
+      souligner_ui_default_text: "Texte"
+      couleur_ui_button_title: "Colorer un texte"
+      couleur_ui_default_text: "Texte"
       addimg_ui_button_title: "Ajouter une image"
       addimg_ui_default_text: "http://"
       floatl_ui_button_title: "Ajouter du contenu à gauche de votre texte"

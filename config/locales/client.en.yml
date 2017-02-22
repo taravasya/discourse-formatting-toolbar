@@ -1,10 +1,10 @@
 en:
   js:
     composer:
-      underline_ui_button_title: "Underline text"
-      underline_ui_default_text: "Text"
-      color_ui_button_title: "Color text"
-      color_ui_default_text: "Text"
+      souligner_ui_button_title: "Underline text"
+      souligner_ui_default_text: "Text"
+      couleur_ui_button_title: "Color text"
+      couleur_ui_default_text: "Text"
       addimg_ui_button_title: "Add an image"
       addimg_ui_default_text: "http://"
       floatl_ui_button_title: "Add content in the left"
