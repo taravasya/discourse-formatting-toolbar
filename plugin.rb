@@ -6,6 +6,4 @@
 
 enabled_site_setting :formattingtlb_ui_enabled
 
-register_asset "javascripts/formatting_bbcode.js", :server_side
-
 register_asset 'stylesheets/formatting.scss'
