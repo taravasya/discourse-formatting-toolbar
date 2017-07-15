@@ -17,6 +17,92 @@ function replaceFontSize (text) {
   return text;
 }
 
+function setupMarkdownIt(md) {
+  const ruler = md.inline.bbcode_ruler;
+
+  ruler.push('size', {
+    tag: 'size',
+    wrap: function(token, tagInfo){
+      token.tag = 'font';
+      token.attrs = [['size', tagInfo.attrs._default]];
+      return true;
+    }
+  });
+
+  ruler.push('color', {
+    tag: 'color',
+    wrap: function(token, tagInfo){
+      token.tag = 'font';
+      token.attrs = [['color', tagInfo.attrs._default]];
+      return true;
+    }
+  });
+
+  ruler.push('small',{
+    tag: 'small',
+    wrap: function(token) {
+      token.tag = 'span';
+      token.attrs = [['style', 'font-size:x-small']];
+      return true;
+    }
+  });
+  
+  ruler.push('floatl', {
+    tag: 'floatl',
+    wrap: function(token, tagInfo){
+      token.tag = 'div';
+      token.attrs = [['class', 'floatl']];
+      return true;
+    }
+  });
+
+  ruler.push('floatr', {
+    tag: 'floatr',
+    wrap: function(token, tagInfo){
+      token.tag = 'div';
+      token.attrs = [['class', 'floatr']];
+      return true;
+    }
+  });
+  
+  ruler.push('left', {
+    tag: 'left',
+    wrap: function(token, tagInfo){
+      token.tag = 'div';
+      token.attrs = [['style', 'text-align:left']];
+      return true;
+    }
+  });
+  
+  ruler.push('center', {
+    tag: 'center',
+    wrap: function(token, tagInfo){
+      token.tag = 'div';
+      token.attrs = [['style', 'text-align:center']];
+      return true;
+    }
+  });
+  
+  ruler.push('right', {
+    tag: 'right',
+    wrap: function(token, tagInfo){
+      token.tag = 'div';
+      token.attrs = [['style', 'text-align:right']];
+      return true;
+    }
+  });
+  
+  ruler.push('justify', {
+    tag: 'justify',
+    wrap: function(token, tagInfo){
+      token.tag = 'div';
+      token.attrs = [['style', 'text-align:justify']];
+      return true;
+    }
+  });
+
+}
+
 export function setup(helper) {
 
   helper.whiteList([
@@ -38,8 +124,14 @@ export function setup(helper) {
     }
   });
 
-  const { register, replaceBBCode } = builders(helper);
+  if (helper.markdownIt) {
+    helper.registerPlugin(setupMarkdownIt);
+    return;
+  }
 
+  const { register, replaceBBCode, rawBBCode, replaceBBCodeParamsRaw } = builders(helper);
+
+  replaceBBCode("small", contents => ['span', {'style': 'font-size:x-small'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
 
@@ -47,6 +139,8 @@ export function setup(helper) {
     replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
   });
 
+
   helper.addPreProcessor(replaceFontColor);
   helper.addPreProcessor(replaceFontSize);
+  
 }

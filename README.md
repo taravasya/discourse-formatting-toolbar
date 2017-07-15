@@ -47,6 +47,7 @@ display: none;
 
 ## Thanks
 
- - [ZogStrip](https://github.com/discourse/vbulletin-bbcode) : for his vbulletin BBcode, which was very helpful.
- - [eviltrout](https://github.com/eviltrout) : for the upgrading of the vbulletin BBcode
+ - [ZogStrip](https://github.com/discourse/vbulletin-bbcode) : for his Discourse BBcode plugin, which served as a base for this plugin.
+ - [eviltrout](https://github.com/eviltrout) : for the upgrade of the Discourse BBcode plugin with a new engine (2016)
+ - [Sam Saffron](https://github.com/SamSaffron) : for the upgrade of the Discourse BBcode plugin with the new markdown-it engine (2017)
  - [cpradio](https://github.com/cpradio) : for the help on the toolbar.
