@@ -109,7 +109,7 @@ export function setup(helper) {
     'div.floatl',
     'div.floatr',
     'font[color=*]',
-    'font[size=*]',
+    'font[size=*]'
   ]);
 
   helper.whiteList({
