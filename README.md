@@ -15,7 +15,7 @@ Add text formatting options on your post
 
 - [**How to install a plugin**](https://meta.discourse.org/t/install-a-plugin/19157) : a guide by @techAPJ<br><br>
 
-- A `[floatr]` bbcode has been created but doesn't have a button. It wasn't necessary and we need to leave some romm on the toolbar. 
+- We have a `floatl` bbcode (and button) that allows you to add a content on the left of your text (like in the screen earlier). There is also a `[floatr][/floatr]` bbcode, that adds a content on the right. The bbcode has been created but I didn’t add a button, it doesn’t feel necessary.
 
 - If you want to change the space between the image on `[floatl]` or `[floatr]`, you can go to the Customize section in your admin panels, create a new css page (in General) and add this and change the value in the margin part : 
 
@@ -51,6 +51,14 @@ button.ember-view.btn.no-text.list {
     display: none;
 }
 ```
+
+<br>
+
+## Support
+
+- [Report an issue on Github](https://github.com/iunctis/discourse-formatting-toolbar/issues)
+- [English support on meta.discourse.org](https://meta.discourse.org/t/formatting-toolbar/40649)
+- [Support en français sur iunctis.fr](https://iunctis.fr/t/formatting-toolbar-options-de-mise-en-forme/4244)
 
 
 <br>
