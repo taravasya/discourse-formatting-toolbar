@@ -1,11 +1,3 @@
 fr:
   site_settings:
-    formattingtlb_ui: 'Activer la formatting toolbar ?'
-    formattingtlb_underline: 'Activer le bouto souligner'
-    formattingtlb_addimg: 'Activer le bouton image'
-    formattingtlb_floatl: 'Activer le bouton float gauche'
-    formattingtlb_left: 'Activer le bouton d'alignement à gauche'
-    formattingtlb_center: 'Activer le bouton center'
-    formattingtlb_right: 'Activer le bouton d'alignement à droite'
-    formattingtlb_justify: 'Activer le bouton justifier'
-    formattingtlb_color: 'Activer le bouton colorer un texte'
+    formattingtlb_ui_enabled: 'Activer les options de mise en forme ?'
