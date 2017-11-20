@@ -13,7 +13,7 @@ plugins:
     client: true
   formattingtlb_left:
     default: false
-    client: false
+    client: true
   formattingtlb_center:
     default: true
     client: true
