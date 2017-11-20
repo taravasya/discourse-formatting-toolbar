@@ -9,6 +9,8 @@ it:
       addimg_ui_default_text: "http://"
       floatl_ui_button_title: "Aggiungi contenuto a sinistra"
       floatl_ui_default_text: "Immagine"
+      left_ui_button_title: "Allinea a destra sinistra"
+      left_ui_default_text: "Testo"
       center_ui_button_title: "Centra il contenuto"
       center_ui_default_text: "Testo"
       right_ui_button_title: "Allinea a destra"
