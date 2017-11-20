@@ -12,7 +12,7 @@ plugins:
     default: true
     client: true
   formattingtlb_left:
-    default: false
+    default: true
     client: true
   formattingtlb_center:
     default: true
