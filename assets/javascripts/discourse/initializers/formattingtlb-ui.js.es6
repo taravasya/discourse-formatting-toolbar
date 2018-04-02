@@ -93,6 +93,17 @@ function initializePlugin(api)
         });
       });
     }
+
+    if (siteSettings.formattingtlb_size) {
+      api.onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: "size_ui_button",
+          group: "extras",
+          icon: "font",
+          perform: e => e.applySurround('[size=4]', '[/size]', 'size_ui_default_text')
+        });
+      });
+    }
   }
 }
 

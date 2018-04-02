@@ -26,3 +26,6 @@ plugins:
   formattingtlb_color:
     default: true
     client: true
+  formattingtlb_size:
+    default: false
+    client: true

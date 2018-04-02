@@ -17,3 +17,5 @@ fr:
       right_ui_default_text: "Texte"
       justify_ui_button_title: "Justifier votre texte"
       justify_ui_default_text: "Texte"
+      size_ui_button_title: "Changer la taille du texte"
+      size_ui_default_text: "Texte"
