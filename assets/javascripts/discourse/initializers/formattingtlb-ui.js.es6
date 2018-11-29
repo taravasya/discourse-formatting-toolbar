@@ -88,7 +88,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "color_ui_button",
           group: "extras",
-          icon: "paint-brush",
+          icon: "palette",
           perform: e => e.applySurround('[color=#]', '[/color]', 'color_ui_default_text')
         });
       });
