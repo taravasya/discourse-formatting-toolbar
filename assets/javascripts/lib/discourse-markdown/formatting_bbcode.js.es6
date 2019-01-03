@@ -61,22 +61,22 @@ function setupMarkdownIt(md) {
 
   ruler.push('left', {
     tag: 'left',
-    wrap: wrap('div', 'style', ()=>'text-align:left')
+    wrap: wrap('div', 'class', ()=>'bbcodeleft')
   });
 
   ruler.push('center', {
     tag: 'center',
-    wrap: wrap('div', 'style', ()=>'text-align:center')
+    wrap: wrap('div', 'class', ()=>'bbcodecenter')
   });
 
   ruler.push('right', {
     tag: 'right',
-    wrap: wrap('div', 'style', ()=>'text-align:right')
+    wrap: wrap('div', 'class', ()=>'bbcoderight')
   });
 
   ruler.push('justify', {
     tag: 'justify',
-    wrap: wrap('div', 'style', ()=>'text-align:justify')
+    wrap: wrap('div', 'class', ()=>'bbcodejustify')
   });
 
 }
@@ -86,6 +86,10 @@ export function setup(helper) {
   helper.whiteList([
     'div.floatl',
     'div.floatr',
+    'div.bbcodeleft',
+    'div.bbcodecenter',
+    'div.bbcoderight',
+    'div.bbcodejustify',
     'font[color=*]',
     'font[size=*]'
   ]);
@@ -96,10 +100,6 @@ export function setup(helper) {
     custom(tag, name, value) {
       if (tag === 'span' && name === 'style') {
         return /^font-size:.*$/.exec(value);
-      }
-
-      if (tag === 'div' && name === 'style') {
-        return /^text-align:(center|left|right|justify)$/.exec(value);
       }
     }
   });
@@ -115,10 +115,10 @@ export function setup(helper) {
   replaceBBCode("small", contents => ['span', {'style': 'font-size:x-small'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
-
-  ["left", "center", "right", "justify"].forEach(direction => {
-    replaceBBCode(direction, contents => ['div', {'style': "text-align:" + direction}].concat(contents));
-  });
+  replaceBBCode("left", contents => ['div', {'class': 'bbcodeleft'}].concat(contents));
+  replaceBBCode("center", contents => ['div', {'class': 'bbcodecenter'}].concat(contents));
+  replaceBBCode("right", contents => ['div', {'class': 'bbcoderight'}].concat(contents));
+  replaceBBCode("justify", contents => ['div', {'class': 'bbcodejustify'}].concat(contents));
 
   helper.addPreProcessor(replaceFontColor);
   helper.addPreProcessor(replaceFontSize);
