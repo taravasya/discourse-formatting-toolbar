@@ -1,0 +1,12 @@
+fr:
+  site_settings:
+    formattingtlb_ui: 'Activer les options de formatage ?'
+    formattingtlb_underline: 'Activer le bouton souligner'
+    formattingtlb_addimg: 'Activer le bouton image'
+    formattingtlb_floatl: 'Activer le bouton float gauche'
+    formattingtlb_left: 'Activer le bouton aligner à gauche'
+    formattingtlb_center: 'Activer le bouton centrer'
+    formattingtlb_right: 'Activer le bouton aligner à droite'
+    formattingtlb_justify: 'Activer le bouton justifier'
+    formattingtlb_color: 'Activer le bouton couleur'
+    formattingtlb_size: 'Activer le bouton taille du texte'
