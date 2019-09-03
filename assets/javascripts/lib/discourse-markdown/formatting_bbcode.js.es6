@@ -60,7 +60,7 @@ function setupMarkdownIt(md) {
   });
 
   ruler.push('floatc', {
-    tag: 'floatr',
+    tag: 'floatc',
     wrap: wrap('div', 'class', ()=>'floatc')
   });
 
