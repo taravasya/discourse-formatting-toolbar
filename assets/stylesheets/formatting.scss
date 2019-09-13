@@ -33,13 +33,13 @@
 }
 
 @media (max-width: 960px) {
-	#reply-control .bullet, #reply-control .list, #reply-control .left_ui_button, #reply-control .justify_ui_button, #reply-control .color_ui_button, #reply-control .size_ui_button {
+	.d-editor-button-bar button.bullet, .d-editor-button-bar button.list, .d-editor-button-bar button.left_ui_button, .d-editor-button-bar button.justify_ui_button, .d-editor-button-bar button.color_ui_button, .d-editor-button-bar button.size_ui_button {
 		display: none;
 	}
 }
 
 @media (max-width: 600px) {
-	#reply-control .addimg_ui_button, #reply-control .floatl_ui_button {
+	.d-editor-button-bar button..addimg_ui_button, .d-editor-button-bar button..floatl_ui_button {
 		display: none;
 	}
 }
