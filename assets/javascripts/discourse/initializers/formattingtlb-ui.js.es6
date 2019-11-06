@@ -5,7 +5,7 @@ function initializePlugin(api)
 {
   const siteSettings = api.container.lookup('site-settings:main');
 
-  if (siteSettings.formattingtlb_ui) {
+  if (siteSettings.formattingtlb_enabled) {
     if (siteSettings.formattingtlb_underline) {
       api.onToolbarCreate(toolbar => {
         toolbar.addButton({
