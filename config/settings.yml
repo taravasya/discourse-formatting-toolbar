@@ -1,5 +1,5 @@
 plugins:
-  formattingtlb_enabled:
+  formattingtlb_ui:
     default: true
     client: true
   formattingtlb_underline:

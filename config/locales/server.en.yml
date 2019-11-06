@@ -1,6 +1,6 @@
 en:
   site_settings:
-    formattingtlb_enabled: 'Activate the formatting toolbar?'
+    formattingtlb_ui: 'Activate the formatting toolbar?'
     formattingtlb_underline: 'Activate the underline button'
     formattingtlb_addimg: 'Activate the image button'
     formattingtlb_floatl: 'Activate the float left button'
