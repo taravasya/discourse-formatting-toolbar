@@ -1,10 +1,10 @@
 # name: discourse-formatting-toolbar
 # about: Add formatting options on your post (Discourse)
-# version: 3.2
+# version: 3.3
 # authors: Steven, iunctis.fr - Thanks to ZogStrip, eviltrout, cpradio and Sam Saffron
 # url: https://github.com/iunctis/discourse-formatting-toolbar.git
 
-enabled_site_setting :formattingtlb_ui
+enabled_site_setting :formattingtlb_enabled
 enabled_site_setting :formattingtlb_underline
 enabled_site_setting :formattingtlb_addimg
 enabled_site_setting :formattingtlb_floatl
