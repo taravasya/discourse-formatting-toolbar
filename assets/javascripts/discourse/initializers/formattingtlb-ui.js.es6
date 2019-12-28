@@ -22,7 +22,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "addimg_ui_button",
           group: "extras",
-          icon: "picture-o",
+          icon: "image",
           perform: e => e.applySurround('[img]', '[/img]', 'addimg_ui_default_text')
         });
       });
