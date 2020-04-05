@@ -19,7 +19,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "addimg_ui_button",
           group: "extras",
-          icon: "image",
+          icon: "far-image",
           perform: e => e.applySurround('[img]', '[/img]', 'addimg_ui_default_text')
         });
     });
