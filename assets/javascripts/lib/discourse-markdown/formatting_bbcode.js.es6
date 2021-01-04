@@ -90,7 +90,7 @@ function setupMarkdownIt(md) {
 
 export function setup(helper) {
 
-  helper.whiteList([
+  helper.allowList([
     'div.floatl',
     'div.floatr',
     'div.floatc',
@@ -104,7 +104,7 @@ export function setup(helper) {
 
 
 
-  helper.whiteList({
+  helper.allowList({
     custom(tag, name, value) {
       if (tag === 'span' && name === 'style') {
         return /^font-size:.*$/.exec(value);
