@@ -3,6 +3,7 @@
 # version: 3.2
 # authors: Steven, iunctis.fr - Thanks to ZogStrip, eviltrout, cpradio and Sam Saffron
 # url: https://github.com/iunctis/discourse-formatting-toolbar.git
+# transpile_js: true
 
 enabled_site_setting :formattingtlb_enabled
 
