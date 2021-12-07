@@ -1,9 +1,3 @@
-import { registerOption } from 'pretty-text/pretty-text';
-
-registerOption(
-  (siteSettings, opts) => (opts.features["formatting_bbcode"] = true)
-);
-
 function replaceFontColor (text) {
   while (text !== (text = text.replace(/\[color=([^\]]+)\]((?:(?!\[color=[^\]]+\]|\[\/color\])[\S\s])*)\[\/color\]/ig, function (match, p1, p2) {
     return `<font color='${p1}'>${p2}</font>`;
@@ -102,14 +96,16 @@ export function setup(helper) {
     'font[size=*]'
   ]);
 
-
-
   helper.allowList({
     custom(tag, name, value) {
       if (tag === 'span' && name === 'style') {
         return /^font-size:.*$/.exec(value);
       }
     }
+  });
+
+  helper.registerOptions((opts) => {
+    opts.features["formatting_bbcode"] = true;
   });
 
   if (helper.markdownIt) {
