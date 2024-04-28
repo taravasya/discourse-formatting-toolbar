@@ -54,7 +54,7 @@ function setupMarkdownIt(md) {
 
   ruler.push('small',{
     tag: 'small',
-    wrap: wrap('span', 'style', ()=>'font-size:x-small')
+    wrap: wrap('div', 'style', ()=>'font-size:x-small')
   });
 
   ruler.push('floatl', {
@@ -110,7 +110,7 @@ export function setup(helper) {
 
   helper.allowList({
     custom(tag, name, value) {
-      if (tag === 'span' && name === 'style') {
+      if (tag === 'div' && name === 'style') {
         return /^font-size:.*$/.exec(value);
       }
     }
@@ -136,7 +136,7 @@ export function setup(helper) {
   const builders = requirejs('pretty-text/engines/discourse-markdown/bbcode').builders;
   const { register, replaceBBCode, rawBBCode, replaceBBCodeParamsRaw } = builders(helper);
 
-  replaceBBCode("small", contents => ['span', {'style': 'font-size:x-small'}].concat(contents));
+  replaceBBCode("small", contents => ['div', {'style': 'font-size:x-small'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("floatc", contents => ['div', {'class': 'floatc'}].concat(contents));
