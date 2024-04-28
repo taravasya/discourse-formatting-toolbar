@@ -5,6 +5,13 @@ function replaceFontColor (text) {
   return text;
 }
 
+function replaceFontBgColor (text) {
+  while (text !== (text = text.replace(/\[bgcolor=([^\]]+)\]((?:(?!\[color=[^\]]+\]|\[\/color\])[\S\s])*)\[\/bgcolor\]/ig, function (match, p1, p2) {
+    return `<span style='background-color:${p1}'>${p2}</span>`;
+  })));
+  return text;
+}
+
 function replaceFontSize (text) {
   while (text !== (text = text.replace(/\[size=([^\]]+)\]((?:(?!\[size=[^\]]+\]|\[\/size\])[\S\s])*)\[\/size\]/ig, function (match, p1, p2) {
     return `<font size='${p1}'>${p2}</font>`;
@@ -38,6 +45,11 @@ function setupMarkdownIt(md) {
   ruler.push('color', {
     tag: 'color',
     wrap: wrap('font', 'color')
+  });
+
+  ruler.push('bgcolor', {
+    tag: 'color',
+    wrap: wrap('span', 'background-color')
   });
 
   ruler.push('small',{
@@ -104,6 +116,14 @@ export function setup(helper) {
     }
   });
 
+  helper.allowList({
+    custom(tag, name, value) {
+      if (tag === 'span' && name === 'style') {
+        return /^background-color:.*$/.exec(value);
+      }
+    }
+  });
+
   helper.registerOptions((opts) => {
     opts.features["formatting_bbcode"] = true;
   });
@@ -126,6 +146,7 @@ export function setup(helper) {
   replaceBBCode("justify", contents => ['div', {'class': 'bbcodejustify'}].concat(contents));
 
   helper.addPreProcessor(replaceFontColor);
+  helper.addPreProcessor(replaceFontBgColor);
   helper.addPreProcessor(replaceFontSize);
 
 }
