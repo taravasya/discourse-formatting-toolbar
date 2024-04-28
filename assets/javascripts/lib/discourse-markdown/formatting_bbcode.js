@@ -48,13 +48,26 @@ function setupMarkdownIt(md) {
   });
 
   ruler.push('bgcolor', {
-    tag: 'bgcolor',
-    wrap: wrap('span', 'style', ()=>'background-color')
+        tag: 'bgcolor',
+        wrap: function (token, endToken, tagInfo) {
+          token.type = "span_open";
+          token.tag = "span";
+          token.attrs = [
+            ["style", "background-color:" + tagInfo.attrs._default.trim()],
+          ];
+          token.content = "";
+          token.nesting = 1;
+
+          endToken.type = "span_close";
+          endToken.tag = "span";
+          endToken.nesting = -1;
+          endToken.content = "";
+        },
   });
 
   ruler.push('small',{
     tag: 'small',
-    wrap: wrap('div', 'style', ()=>'font-size:x-small')
+    wrap: wrap('div', 'style', ()=>'font-size:small')
   });
 
   ruler.push('floatl', {
@@ -136,7 +149,7 @@ export function setup(helper) {
   const builders = requirejs('pretty-text/engines/discourse-markdown/bbcode').builders;
   const { register, replaceBBCode, rawBBCode, replaceBBCodeParamsRaw } = builders(helper);
 
-  replaceBBCode("small", contents => ['div', {'style': 'font-size:x-small'}].concat(contents));
+  replaceBBCode("small", contents => ['div', {'style': 'font-size:small'}].concat(contents));
   replaceBBCode("floatl", contents => ['div', {'class': 'floatl'}].concat(contents));
   replaceBBCode("floatr", contents => ['div', {'class': 'floatr'}].concat(contents));
   replaceBBCode("floatc", contents => ['div', {'class': 'floatc'}].concat(contents));
