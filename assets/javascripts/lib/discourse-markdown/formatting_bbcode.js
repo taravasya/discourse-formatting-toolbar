@@ -6,7 +6,7 @@ function replaceFontColor (text) {
 }
 
 function replaceFontBgColor (text) {
-  while (text !== (text = text.replace(/\[bgcolor=([^\]]+)\]((?:(?!\[color=[^\]]+\]|\[\/color\])[\S\s])*)\[\/bgcolor\]/ig, function (match, p1, p2) {
+  while (text !== (text = text.replace(/\[bgcolor=([^\]]+)\]((?:(?!\[bgcolor=[^\]]+\]|\[\/color\])[\S\s])*)\[\/bgcolor\]/ig, function (match, p1, p2) {
     return `<span style='background-color:${p1}'>${p2}</span>`;
   })));
   return text;
@@ -48,8 +48,8 @@ function setupMarkdownIt(md) {
   });
 
   ruler.push('bgcolor', {
-    tag: 'color',
-    wrap: wrap('span', 'background-color')
+    tag: 'bgcolor',
+    wrap: wrap('span', 'style', 'background-color')
   });
 
   ruler.push('small',{
