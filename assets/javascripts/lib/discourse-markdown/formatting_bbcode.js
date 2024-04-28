@@ -49,7 +49,7 @@ function setupMarkdownIt(md) {
 
   ruler.push('bgcolor', {
     tag: 'bgcolor',
-    wrap: wrap('span', 'style', 'background-color')
+    wrap: wrap('span', 'style', ()=>'background-color')
   });
 
   ruler.push('small',{
