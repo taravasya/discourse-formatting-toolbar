@@ -6,7 +6,7 @@ function replaceFontColor (text) {
 }
 
 function replaceFontBgColor (text) {
-  while (text !== (text = text.replace(/\[bgcolor=([^\]]+)\]((?:(?!\[bgcolor=[^\]]+\]|\[\/color\])[\S\s])*)\[\/bgcolor\]/ig, function (match, p1, p2) {
+  while (text !== (text = text.replace(/\[bgcolor=([^\]]+)\]((?:(?!\[bgcolor=[^\]]+\]|\[\/bgcolor\])[\S\s])*)\[\/bgcolor\]/ig, function (match, p1, p2) {
     return `<span style='background-color:${p1}'>${p2}</span>`;
   })));
   return text;
