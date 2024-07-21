@@ -1,8 +1,12 @@
 en:
   js:
     composer:
+      hide_ui_button_title: "Hidden text"
+      hide_ui_default_text: "Text"      
       underline_ui_button_title: "Underline text"
       underline_ui_default_text: "Text"
+      strikethroug_ui_button_title: "Striketrough text"
+      strikethroug_ui_default_text: "Text"      
       color_ui_button_title: "Color text"
       color_ui_default_text: "Text"
       addimg_ui_button_title: "Add an image"

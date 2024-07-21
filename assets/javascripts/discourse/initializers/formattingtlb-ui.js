@@ -7,12 +7,30 @@ function initializePlugin(api)
   if (siteSettings.formattingtlb_enabled) {
     api.onToolbarCreate(toolbar => {
         toolbar.addButton({
+          id: "hide_ui_button",
+          group: "extras",
+          icon: "eye-slash",
+          perform: e => e.applySurround('[wrap hide=trust_level_1]', '[/wrap]', 'hide_ui_default_text')
+        });
+    });
+
+    api.onToolbarCreate(toolbar => {
+        toolbar.addButton({
           id: "underline_ui_button",
           group: "fontStyles",
           icon: "underline",
           perform: e => e.applySurround('[u]', '[/u]', 'underline_ui_default_text')
         });
     });
+
+    api.onToolbarCreate(toolbar => {
+        toolbar.addButton({
+          id: "strikethrough_ui_button",
+          group: "fontStyles",
+          icon: "strikethrough",
+          perform: e => e.applySurround('[s]', '[/s]', 'strikethroug_ui_default_text')
+        });
+    });    
 
     api.onToolbarCreate(toolbar => {
         toolbar.addButton({
