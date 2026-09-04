@@ -28,7 +28,7 @@ function initializePlugin(api)
           id: "strikethrough_ui_button",
           group: "fontStyles",
           icon: "strikethrough",
-          perform: e => e.applySurround('[s]', '[/s]', 'strikethroug_ui_default_text')
+          perform: e => e.applySurround('[s]', '[/s]', 'strikethrough_ui_default_text')
         });
     });    
 
